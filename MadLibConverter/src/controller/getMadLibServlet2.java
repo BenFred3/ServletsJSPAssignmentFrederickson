@@ -35,16 +35,19 @@ public class getMadLibServlet2 extends HttpServlet
 		// And displayed the first madLib on index.jsp. If there is a better way to do it please let me know.
 		//String createdMadLibStory = (String) request.getAttribute("createdMadLib");
 		
+		// Create a parameter for each variable that is used by the MadLibConverter.
 		String userFifthAdj = request.getParameter("userFifthAdj");
 		String userSecondNoun = request.getParameter("userSecondNoun");
 		String userAnimal = request.getParameter("userAnimal");
 		String userNoise = request.getParameter("userNoise");
 		
+		// Pass in all the parameters.
 		MadLibConverter createdMadLibStory2 = new MadLibConverter(userFifthAdj, userSecondNoun, userAnimal, userNoise);
 		
-		
+		// Set a attribute from the created story so the jsp can read it.
 		request.setAttribute("createdMadLib2", createdMadLibStory2);
 		
+		// Go to the jsp and forward the requests and responses.
 		getServletContext().getRequestDispatcher("/result.jsp").forward(request, response);
 	}
 

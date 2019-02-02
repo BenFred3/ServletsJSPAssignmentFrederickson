@@ -20,7 +20,7 @@ Animal: ${createdMadLib2.getAnimal()}
 <br>
 Noise: ${createdMadLib2.getNoise()}
 <br>
-<a href="index2.jsp"> Redo this MadLib. (Warning previous page will not have the first MadLab filled out.)</a>
+<a href="index2.jsp"> Re-do this MadLib. (Warning previous page will not have the first MadLab filled out.)</a>
 <br><br>
 <a href="index.jsp">Use different words in the created MadLibs!</a>
 </p>
